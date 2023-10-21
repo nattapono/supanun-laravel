@@ -1,0 +1,147 @@
+<?php
+
+return [
+
+    //Localization For application buttons
+
+        'menu' => [
+                "th"                    => "ไทย",
+                "en"                    => "อังกฤษ",
+                "home"                  => "主页",
+                "service"               => "สินค้า&บริการ",
+                "history"               => "记录",
+                "activity"                =>"活动",
+                "mysalf"               => "自己查一下你的星座运势",
+                "sms traking"           => "SMS TRACKING",
+                "sms service"           => "SMS SERVICE",
+                "payment and service"   => "支付与服务",
+                "pricing"               => "แพ็คเกจ&ราคา",
+                "blog"                  => "关于精神的知识",
+                "faq"                   => "คำถามที่พบบ่อย",
+                "about us"              => "关于我们",
+                "suport"                => "ช่วยเหลือ",
+                "contact us"             => "联系/询问",
+                "contact admin"             => "ติดต่อเจ้าหน้าทีี่",
+                "contact doc"             => "ติดต่อ อาจารย์",
+                "share"                  => "แชร์",
+                "Billing"                => "การเรียกเก็บเงิน",
+                "trial"                 => "ทดลองใช้ฟรี",
+                "signin"                => "ล็อคอิน",
+                "register"              => "สมัครสมาชิก",
+                "Dashboard"          => "แผงควบคุม",
+                "Customer"           => "ลูกค้า",
+                "Customers"          => "ลูกค้า",
+                "Subscriptions"      => "การสมัครรับข้อมูล",
+                "Plan"               => "วางแผน",
+                "Plans"              => "แผน",
+                "Currencies"         => "สกุลเงิน",
+                "Sending"            => "การส่ง",
+                "Sending Servers"    => "ส่งเซิร์ฟเวอร์",
+                "Keywords"           => "คำหลัก",
+                "Templates"          => "แม่แบบ",
+                "Template Tags"      => "แท็กเทมเพลต",
+                "Security"           => "การรักษาความปลอดภัย",
+                "Sender ID"          => "ID ผู้ส่ง",
+                "Phone Numbers"      => "หมายเลขโทรศัพท์",
+                "Numbers"            => "ตัวเลข",
+                "Blacklist"          => "บัญชีดำ",
+                "Spam Word"          => "คำสแปม",
+                "Ticket"             => "ตั๋ว",
+                "Tickets"            => "ตั๋ว",
+                "Department"         => "สาขา",
+                "Administrator"      => "ผู้ดูแล",
+                "Administrators"     => "ผู้ดูแลระบบ",
+                "Admin Roles"        => "บทบาทผู้ดูแลระบบ",
+                "Settings"           => "การตั้งค่า",
+                "All Settings"       => "การตั้งค่าทั้งหมด",
+                "Language"           => "ภาษา",
+                "Payment Gateways"   => "เกตเวย์การชำระเงิน",
+                "payment"            => "การชำระเงิน",
+                "Email Templates"    => "เทมเพลตอีเมล",
+                "Background jobs"    => "ทำงานในพื้นหลัง",
+                "Purchase Code"      => "รหัสซื้อ",
+                "Update Application" => "อัปเดตแอปพลิเคชัน",
+                "Maintenance Mode"   => "บำรุงรักษาบำรุงรักษา",
+                "Reports"            => "รายงาน",
+                "All Invoices"       => "ใบแจ้งหนี้ทั้งหมด",
+                "SMS History"        => "ประวัติ SMS",
+                "Block Message"      => "ข้อความบล็อก",
+                "Logout"             => "ออกจากระบบ",
+                "profile"               => "บัญชีของฉัน",
+                "View Charts"        => "ดูแผนภูมิ",
+                "Contacts"           => "ผู้ติดต่อ",
+                "SMS"                => "ข้อความ",
+                "Voice"              => "เสียง",
+                "MMS"                => "mms",
+                "WhatsApp"           => "whatsapp",
+                "SMS Template"       => "แม่แบบ SMS",
+                "Chat Box"           => "กล่องแชท",
+                "Knowledge Bases"    => "ฐานความรู้",
+                "Overview"           => "ภาพรวม",
+                "Campaign Builder"   => "ตัวสร้างแคมเปญ",
+                "Quick Send"         => "ส่งด่วน",
+                "Send Using File"    => "ส่งการใช้ไฟล์",
+                "Developers"         => "นักพัฒนา",
+                "Plugins"            => "ปลั๊กอิน",
+                "All Messages"       => "ข้อความทั้งหมด",
+                "Received Messages"  => "รับข้อความ",
+                "Sent Messages"      => "ส่งข้อความ",
+                "Campaigns"          => "แคมเปญ",
+                "Settings Banks"     => "Settings Bank",
+                "Settings Promotion" => "ตั้งค่าโปรโมชั่น",
+                "Manage Blog"        => "จัดการBlog",
+                "OTP"                => "OTP",
+
+        ],
+
+        'gobal' => [
+                "bath"                    => "บาท",
+                "sms"                     => "ข้อความ",
+                "day"                     => "วัน",
+                "month"                   => "เดือน",
+                "year"                    => "ปี",
+                "buy now"                 => "ซื้อตอนนี้",
+                "message"                 => "ข้อความ",
+                "bank_account_number"     => "เลขที่บัญชี",
+                "k_bank"                  => "ธนาคารกสิกรไทย",
+                "bbl_bank"                => "ธนาคารกรุงเทพฯ",
+                "scb_bank"                => "ธนาคารไทยพาณิชย์",
+                "krungsri_bank"           => "ธนาคารกรุงศรีอยุธยา",
+                "mostpopula"          => "ที่นิยมมากที่สุด",
+                "title"                 => "ผู้ให้บริการส่ง sms ตรงทุกกลุ่มเป้าหมาย เพิ่มยอดขายตรงใจคุณ"
+        ],
+
+
+        'home' => [
+                "complete delivery"                                     => "จัดส่งให้เรียบร้อย",
+                "head"                                                  => "บริการยืนยันตัวตนด้วย OTP",
+                "customers"                                             => "ลูกค้า",
+
+        ],
+
+        'about' => [
+            "title"                     => "关于我们",
+
+        ],
+
+        'history' => [
+            "title"                    => "老师的历史",
+            "contact"                   => "联系老师",
+            "reservation"               => "做一个预约",
+        ],
+
+        'payment' => [
+            "title"                    => "服务与付款",
+        ],
+
+        'forecast' => [
+            "title"                  => "自己查一下你的星座运势",
+       ],
+
+        'signin' => [
+            "title"                  => "登入",
+       ],
+        'signup' => [
+            "title"                  => "申请会员资格",
+       ],
+];

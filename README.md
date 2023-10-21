@@ -67,3 +67,10 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 
 # php artisan make:controller HistoryController
+
+
+<!-- 
+git add .      
+git commit -m "update"   
+ git push origin    
+-->
