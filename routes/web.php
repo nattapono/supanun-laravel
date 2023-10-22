@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+
+use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\TemplateController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MemberController;
@@ -97,5 +99,6 @@ Route::resource('/admin/activities/calendar',ActivityCalendarController::class);
 Route::resource('/admin/activities/videos',ActivityVideoController::class);
 Route::resource('/admin/activities/album',ActivityAlbumController::class);
 Route::resource('/admin/termsofuse',TermsofuseController::class);
+Route::resource('/admin/appointment',AppointmentController::class);
 Route::get('/signout',[SignoutController::class,'destroy'])->name('logout');
 

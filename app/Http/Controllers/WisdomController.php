@@ -70,7 +70,7 @@ class WisdomController extends Controller
             ];
         }
         $wisdom = Wisdom::create($prepareData);
-        return view("admin.wisdom.index");
+        return redirect()->route('wisdom.index');
     }
 
     /**

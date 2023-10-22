@@ -6,6 +6,8 @@ use App\Models\Activity_album;
 use App\Models\Setting;
 use App\Models\Zodiac;
 use App\Models\Card;
+use App\Models\Wisdom;
+use App\Models\Wisdom_type;
 use App\Models\Member;
 use App\Models\Activity_calendar;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
@@ -43,8 +45,10 @@ class TemplateController extends Controller
     public function payment(){
         return view('FrontClient.payment');
     }
-    public function blog(){
-        return view('FrontClient.blog');
+    public function blog(){ // สายญาณ
+        $wisdom = Wisdom::all();
+        $wisdom_type = Wisdom_type::all();
+        return view('FrontClient.blog')->with(['wisdom_data'=> $wisdom, 'wisdom_type'=>$wisdom_type]);
     }
     public function forecast(){
         $card = Card::all();

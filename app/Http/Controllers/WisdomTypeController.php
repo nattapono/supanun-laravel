@@ -51,7 +51,7 @@ class WisdomTypeController extends Controller
             ];
         }
         $wisdom_type = Wisdom_type::create($prepareData);
-        return view("wisdom_type");
+        return redirect()->route('wisdom_type.index');
     }
 
     /**

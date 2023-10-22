@@ -887,6 +887,53 @@
     .dtportfolio-swiper-pagination-holder .swiper-pagination-bullet-active {
         background: #ffffff;
     }
+
+    /* Style the tab */
+    .tab {
+        overflow: hidden;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button:disabled{
+        background-color: inherit;
+        color:#999;
+    }
+    .tab button:disabled:hover {
+    background-color: #0303;
+    }
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+        border-radius: 2px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+    background-color: #4e9d43;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+    background-color: #4e9d43;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-bottom: 1px solid #ccc;
+    border-top: none;
+    text-align: center;
+    }
     </style>
     <link rel='stylesheet' id='dtportfolio-responsive-css'
         href='https://ศรีภุชงค์ทรัพย์อนันต.com/resources/css/responsive.css?ver=6.3' type='text/css' media='all' />
@@ -5087,6 +5134,28 @@
         window.RS_MODULES.checkMinimal();
     };
     </script>
+    <script>
+// เรียกใช้ฟังก์ชันเมื่อเอกสารโหลดเสร็จ
+document.addEventListener("DOMContentLoaded", function() {
+  // แสดงแท็บแรกทันที
+  document.getElementById("1").style.display = "block";
+  document.querySelector(".tab button").classList.add("active");
+});
+
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].classList.remove("active");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.classList.add("active");
+}
+</script>
 </body>
 
 </html>

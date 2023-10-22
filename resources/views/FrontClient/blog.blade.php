@@ -1,15 +1,15 @@
 @extends('FrontClient.master')
 @section('vendor-style')
-    {{-- Page Css files --}}
+{{-- Page Css files --}}
 
 @endsection
 @section('title', __('gobal.title'))
-    @section('header')
-        @include('FrontClient.panels.header')
-    @endsection
+@section('header')
+@include('FrontClient.panels.header')
+@endsection
 
-        @section('content')
-        <div class="header-top-absolute">
+@section('content')
+<div class="header-top-absolute">
     <!-- ** Slider ** -->
     <div id="slider">
         <div id="dt-sc-rev-slider" class="dt-sc-main-slider">
@@ -27,22 +27,44 @@
         </div>
     </div>
 </div>
-        <div id="">
-            <!-- ** Container ** -->
-            <div class="container">
-                <!-- Primary -->
-                <section id="primary" class="content-full-width">	<!-- #post-20413 -->
-                    <div id="post-20413" class="post-20413 page type-page status-publish" style="color:#4e9d43">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, esse provident! Voluptate, consequatur quas repellat possimus quae illo obcaecati natus eum dolor similique, doloribus unde voluptatibus molestias neque porro! Deserunt!
-                    </div>
+<div id="">
+    <!-- ** Container ** -->
+    <div class="container">
+        <!-- Primary -->
+        <section id="primary" class="content-full-width">
+            <!-- #post-20413 -->
+            <div id="post-20413" class="post-20413 page type-page status-publish" style="color:#4e9d43">
+                <div class="tab">
+                    @foreach($wisdom_type as $row)
+                    @foreach($wisdom_data as $item)
+                        @if($item->type_id==$row->id)
+                        <button class="tablinks" onclick="openCity(event, {{$row->id}})"><b>{!! $row->type_name_th !!}</b></button>
+
+                        <!-- <button class="tablinks" disabled> {!! $row->type_name_th !!}</button> -->
+                        @endif
+                    @endforeach
+                    @endforeach
                 </div>
+                @foreach($wisdom_type as $rows)
+                <div id="{{ $rows->id}}" class="tabcontent" style="min-height:220px;">
+                    @foreach($wisdom_data as $item)
+                        @if($item->type_id==$rows->id)
+                            <h3>{!! $item->subject_th !!}</h3>
+                            <p>{!! $item->desc_th !!}</p>
+                        @endif
+                    @endforeach
+                </div>
+                @endforeach
+
             </div>
-        </div>
-    </section>
-    <!-- ** Container End ** -->
+    </div>
+</div>
+</div>
+</section>
+<!-- ** Container End ** -->
 
 @endsection
 
 @section('footer')
-    @include('FrontClient.panels.footer')
+@include('FrontClient.panels.footer')
 @endsection
